@@ -19,7 +19,7 @@ event yang ditriger, maka akan ada state yang diupdate.
 
 Pada sisi komponen (widget), kita akan menggunakan `BlocBuilder` untuk mengawasi perubahan
 state yang terjadi. Begitu terdapat perubaha pada state yang diawasi, widget langsung
-melakukan "refresh" UI pada screen.
+melakukan "refresh".
 
 Dalam demo ini kita membuat sebuah aplikasi Flutter yang
 mengkonsumsi JSON dari REST API dan menampilkan responsenya
