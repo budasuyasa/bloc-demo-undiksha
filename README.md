@@ -161,7 +161,7 @@ perubahan state yang terjadi. `BlocBuilder` memerlukan parameter
 `bloc` dan `state`. Kita akan menggunakan `BlocBuku` dan `BukuState`.
 
 ```dart
-  // kode widget lainnya
+// kode widget lainnya
 
 @override
 Widget build(BuildContext context) {
