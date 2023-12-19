@@ -1,48 +1,73 @@
 # BloC Demo
 
-Project ini merupakan project demo untuk menunjukan penggunaan
-BloC pattern pada Flutter.
+Project ini merupakan project demo untuk menunjukan penggunaan BloC pattern pada
+Flutter.
 
 ## Apa itu BloC
-BloC adalah pattern yang sangat populer yang digunakan untuk
-melakukan manajemen state dan komponen dalam proyek Flutter.
-BloC memisahkan perhatian antara state dan komponen menjadi bagian yang terpisah, sehingga codebase akan lebih mudah untuk diorganisir dan dirawat.
 
-BloC menggunakan konsep event, state, dan component. Contoh dari event
-yaitu ketika sebuah tombol diklik. Event tidak hanya bisa terjadi
-dari hasil interaksi user interface, event juga bisa terjadi
-dari serangkaian proses. Misalkan event dijalankan setelah sebuah
-komponen berhasil dirender di layar.
+BloC adalah pattern yang sangat populer yang digunakan untuk melakukan manajemen
+state dan komponen dalam proyek Flutter. BloC memisahkan perhatian antara state
+dan komponen menjadi bagian yang terpisah, sehingga codebase akan lebih mudah
+untuk diorganisir dan dirawat.
 
-Dalam implementasinya, kita akan membuat sebuah `Bloc` class yang berfungsi memetekan `event` dengan `state`. Dengan kata lain, ketika ada
-event yang ditriger, maka akan ada state yang diupdate.
+BloC menggunakan konsep event, state, dan component. Contoh dari event yaitu
+ketika sebuah tombol diklik. Event tidak hanya bisa terjadi dari hasil interaksi
+user interface, event juga bisa terjadi dari serangkaian proses. Misalkan event
+dijalankan setelah sebuah komponen berhasil dirender di layar.
 
-Pada sisi komponen (widget), kita akan menggunakan `BlocBuilder` untuk mengawasi perubahan
-state yang terjadi. Begitu terdapat perubaha pada state yang diawasi, widget langsung
-melakukan "refresh".
+Dalam implementasinya, kita akan membuat sebuah `Bloc` class yang berfungsi
+memetekan `event` dengan `state`. Dengan kata lain, ketika ada event yang
+ditriger, maka akan ada state yang diupdate.
 
-Dalam demo ini kita membuat sebuah aplikasi Flutter yang
-mengkonsumsi JSON dari REST API dan menampilkan responsenya
-ke dalam `ListView`.
+Pada sisi komponen (widget), kita akan menggunakan `BlocBuilder` untuk mengawasi
+perubahan state yang terjadi. Begitu terdapat perubaha pada state yang diawasi,
+widget langsung melakukan "refresh".
 
-Folder `undiksha01api` berisikan aplikasi web yang dibuat dengan
-Laravel untuk kebutuhan REST API. Folder `undiksha01` dan `undiksha02` berisikan project Flutter yang
-mendemonstrasikan penggunaan BloC. Perbedaan antara `undiksha01` dan
-`undiksha02` terletak pada organisasi kode. Pada `undiksha02`, kode
-telah dipisahkan sesuai dengan kategorinya masing-masing yang diorganisasikan ke folder dan file.
+Dalam demo ini kita membuat sebuah aplikasi Flutter yang mengkonsumsi JSON dari
+REST API dan menampilkan responsenya ke dalam `ListView`.
 
-Penerapan BloC pada demo ini menggunakan library 
-[flutter_bloc](https://pub.dev/packages/flutter_bloc) untuk meminimalisir boilerplate kode sehingga dapat fokus pada penerapan `BloC` saja.
+Folder `undiksha01api` berisikan aplikasi web yang dibuat dengan Laravel untuk
+kebutuhan REST API. Folder `undiksha01` dan `undiksha02` berisikan project
+Flutter yang mendemonstrasikan penggunaan BloC. Perbedaan antara `undiksha01`
+dan `undiksha02` terletak pada organisasi kode. Pada `undiksha02`, kode telah
+dipisahkan sesuai dengan kategorinya masing-masing yang diorganisasikan ke
+folder dan file. BloC menggunakan konsep event, state, dan component. Contoh
+dari event yaitu ketika sebuah tombol diklik. Event tidak hanya bisa terjadi
+dari hasil interaksi user interface, event juga bisa terjadi dari serangkaian
+proses. Misalkan event dijalankan setelah sebuah komponen berhasil dirender di
+layar.
 
-Rekaman video sesi demo dapat ditonton pada URL berikut 
+Dalam implementasinya, kita akan membuat sebuah `Bloc` class yang berfungsi
+memetekan `event` dengan `state`. Dengan kata lain, ketika ada event yang
+ditriger, maka akan ada state yang diupdate.
+
+Pada sisi komponen (widget), kita akan menggunakan `BlocBuilder` untuk mengawasi
+perubahan state yang terjadi. Begitu terdapat perubaha pada state yang diawasi,
+widget langsung melakukan "refresh".
+
+Dalam demo ini kita membuat sebuah aplikasi Flutter yang mengkonsumsi JSON dari
+REST API dan menampilkan responsenya ke dalam `ListView`.
+
+Folder `undiksha01api` berisikan aplikasi web yang dibuat dengan Laravel untuk
+kebutuhan REST API. Folder `undiksha01` dan `undiksha02` berisikan project
+Flutter yang mendemonstrasikan penggunaan BloC. Perbedaan antara `undiksha01`
+dan `undiksha02` terletak pada organisasi kode. Pada `undiksha02`, kode telah
+dipisahkan sesuai dengan kategorinya masing-masing yang diorganisasikan ke
+folder dan file.
+
+Penerapan BloC pada demo ini menggunakan library
+[flutter_bloc](https://pub.dev/packages/flutter_bloc) untuk meminimalisir
+boilerplate kode sehingga dapat fokus pada penerapan `BloC` saja.
+
+Rekaman video sesi demo dapat ditonton pada URL berikut
 [URL Berikut](https://us06web.zoom.us/rec/share/NdCYMU9VNKk8i3XOKyWmd8kTfx4lLS6lowyDe9ZbTD-rdL5BXXT_ylKO_gKBv3YJ.nc_pzjvh-wnwLINQ)
 
 Passcode: `#Q*MWVP2`
 
 ## Membuat Model Buku untuk proses serialisasi JSON
 
-Pertama, buat buatlah sebuah model dengan nama `Buku` yang nanti akan
-digunakan pada proses serialisasi JSON response dari REST API
+Pertama, buat buatlah sebuah model dengan nama `Buku` yang nanti akan digunakan
+pada proses serialisasi JSON response dari REST API
 
 ```dart
 class Buku {
@@ -69,6 +94,7 @@ class Buku {
 ```
 
 ## Menyiapkan class untuk event
+
 Selanjutnya kita akan menyiapkan beberapa class event.
 
 ```dart
@@ -89,6 +115,7 @@ class DeleteBuku extends BukuEvent {}
 ```
 
 ## Menyiapkan class untuk state
+
 Kita juga akan membuat beberapa class untuk menyimpan state.
 
 ```dart
@@ -108,10 +135,9 @@ class LoadedBuku extends BukuState {
 
 ```
 
-Selanjutnya kita akan membuat membuat class BloC serta logic
-dalam melakukan serialisasi JSON. Dalam pembuatan class BloC
-ini, kita akan menggunakan `BukuEvent` dan `BukuState` sebagai 
-parameter.
+Selanjutnya kita akan membuat membuat class BloC serta logic dalam melakukan
+serialisasi JSON. Dalam pembuatan class BloC ini, kita akan menggunakan
+`BukuEvent` dan `BukuState` sebagai parameter.
 
 ```dart
 
@@ -156,9 +182,9 @@ class BlocBuku extends Bloc<BukuEvent, BukuState> {
 
 ## Menggunakan BlocBuilder pada widget
 
-`BlocBuilder` adalah widget yang digunakan untuk mendengarkan
-perubahan state yang terjadi. `BlocBuilder` memerlukan parameter
-`bloc` dan `state`. Kita akan menggunakan `BlocBuku` dan `BukuState`.
+`BlocBuilder` adalah widget yang digunakan untuk mendengarkan perubahan state
+yang terjadi. `BlocBuilder` memerlukan parameter `bloc` dan `state`. Kita akan
+menggunakan `BlocBuku` dan `BukuState`.
 
 ```dart
 // kode widget lainnya
