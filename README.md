@@ -1,4 +1,4 @@
-# Bloc Demo
+# BloC Demo
 
 Project ini merupakan project demo untuk menunjukan penggunaan
 Bloc pattern pada Flutter.
