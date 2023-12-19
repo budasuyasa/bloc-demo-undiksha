@@ -8,17 +8,18 @@ Bloc adalah pattern yang sangat populer yang digunakan untuk
 melakukan manajemen state dan komponen dalam proyek Flutter.
 Bloc memisahkan perhatian antara state dan komponen menjadi bagian yang terpisah, sehingga codebase akan lebih mudah untuk diorganisir dan dirawat.
 
-Bloc menggunakan konsep event, state, dan component. Contoh dari event
-yaitu ketika sebuah sebuah tombol diklik. Event tidak hanya bisa terjadi
+BloC menggunakan konsep event, state, dan component. Contoh dari event
+yaitu ketika sebuah tombol diklik. Event tidak hanya bisa terjadi
 dari hasil interaksi user interface, event juga bisa terjadi
 dari serangkaian proses. Misalkan event dijalankan setelah sebuah
 komponen berhasil dirender di layar.
 
-Dalam implementasinya, kita akan membuat sebuah BloC class yang berfungsi memetekan event dengan state. Dengan kata lain, ketika ada
+Dalam implementasinya, kita akan membuat sebuah `Bloc` class yang berfungsi memetekan `event` dengan `state`. Dengan kata lain, ketika ada
 event yang ditriger, maka akan ada state yang diupdate.
 
-Pada sisi komponen, kita akan menggunakan listener yang akan mengawasi
-setiap perubahan state yang terjadi. Secara reaktif, komponen akan melakukan proses update ketika state berubah.
+Pada sisi komponen (widget), kita akan menggunakan `BlocBuilder` untuk mengawasi perubahan
+state yang terjadi. Begitu terdapat perubaha pada state yang diawasi, widget langsung
+melakukan "refresh" UI pada screen.
 
 Dalam demo ini kita membuat sebuah aplikasi Flutter yang
 mengkonsumsi JSON dari REST API dan menampilkan responsenya
