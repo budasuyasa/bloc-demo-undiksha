@@ -29,11 +29,10 @@ Folder `undiksha01api` berisikan aplikasi web yang dibuat dengan
 Laravel untuk kebutuhan REST API. Folder `undiksha01` dan `undiksha02` berisikan project Flutter yang
 mendemonstrasikan penggunaan BloC. Perbedaan antara `undiksha01` dan
 `undiksha02` terletak pada organisasi kode. Pada `undiksha02`, kode
-telah dipisahkan sesuai dengan concernnya masing-masing dan diorganisasikan menjadi folder dan file terpisah.
+telah dipisahkan sesuai dengan kategorinya masing-masing yang diorganisasikan ke folder dan file.
 
-Penerapan BloC pada demo ini menggunakan library `flutter_bloc` untuk
-meminimalisir boilerplate kode sehingga dapat fokus pada penerapan
-`BloC` saja.
+Penerapan BloC pada demo ini menggunakan library 
+[flutter_bloc](https://pub.dev/packages/flutter_bloc) untuk meminimalisir boilerplate kode sehingga dapat fokus pada penerapan `BloC` saja.
 
 Rekaman video sesi demo dapat ditonton pada URL berikut 
 [URL Berikut](https://us06web.zoom.us/rec/share/NdCYMU9VNKk8i3XOKyWmd8kTfx4lLS6lowyDe9ZbTD-rdL5BXXT_ylKO_gKBv3YJ.nc_pzjvh-wnwLINQ)
