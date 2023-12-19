@@ -1,12 +1,12 @@
 # BloC Demo
 
 Project ini merupakan project demo untuk menunjukan penggunaan
-Bloc pattern pada Flutter.
+BloC pattern pada Flutter.
 
 ## Apa itu BloC
-Bloc adalah pattern yang sangat populer yang digunakan untuk
+BloC adalah pattern yang sangat populer yang digunakan untuk
 melakukan manajemen state dan komponen dalam proyek Flutter.
-Bloc memisahkan perhatian antara state dan komponen menjadi bagian yang terpisah, sehingga codebase akan lebih mudah untuk diorganisir dan dirawat.
+BloC memisahkan perhatian antara state dan komponen menjadi bagian yang terpisah, sehingga codebase akan lebih mudah untuk diorganisir dan dirawat.
 
 BloC menggunakan konsep event, state, dan component. Contoh dari event
 yaitu ketika sebuah tombol diklik. Event tidak hanya bisa terjadi
@@ -108,8 +108,8 @@ class LoadedBuku extends BukuState {
 
 ```
 
-Selanjutnya kita akan membuat membuat class Bloc serta logic
-dalam melakukan serialisasi JSON. Dalam pembuatan class Bloc
+Selanjutnya kita akan membuat membuat class BloC serta logic
+dalam melakukan serialisasi JSON. Dalam pembuatan class BloC
 ini, kita akan menggunakan `BukuEvent` dan `BukuState` sebagai 
 parameter.
 
