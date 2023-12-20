@@ -38,9 +38,7 @@ Penerapan BloC pada demo ini menggunakan library
 boilerplate kode sehingga dapat fokus pada penerapan `BloC` saja.
 
 Rekaman video sesi demo dapat ditonton pada
-[URL Berikut](https://us06web.zoom.us/rec/share/NdCYMU9VNKk8i3XOKyWmd8kTfx4lLS6lowyDe9ZbTD-rdL5BXXT_ylKO_gKBv3YJ.nc_pzjvh-wnwLINQ)
-
-Passcode: `#Q*MWVP2`
+[URL Berikut](https://1drv.ms/f/s!AtNU7TKcQy57g5xr5_umbR8L2lmJaA?e=p84zje)
 
 ## Membuat Model Buku untuk proses serialisasi JSON
 
