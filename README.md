@@ -31,29 +31,7 @@ kebutuhan REST API. Folder `undiksha01` dan `undiksha02` berisikan project
 Flutter yang mendemonstrasikan penggunaan BloC. Perbedaan antara `undiksha01`
 dan `undiksha02` terletak pada organisasi kode. Pada `undiksha02`, kode telah
 dipisahkan sesuai dengan kategorinya masing-masing yang diorganisasikan ke
-folder dan file. BloC menggunakan konsep event, state, dan component. Contoh
-dari event yaitu ketika sebuah tombol diklik. Event tidak hanya bisa terjadi
-dari hasil interaksi user interface, event juga bisa terjadi dari serangkaian
-proses. Misalkan event dijalankan setelah sebuah komponen berhasil dirender di
-layar.
-
-Dalam implementasinya, kita akan membuat sebuah `Bloc` class yang berfungsi
-memetekan `event` dengan `state`. Dengan kata lain, ketika ada event yang
-ditriger, maka akan ada state yang diupdate.
-
-Pada sisi komponen (widget), kita akan menggunakan `BlocBuilder` untuk mengawasi
-perubahan state yang terjadi. Begitu terdapat perubaha pada state yang diawasi,
-widget langsung melakukan "refresh".
-
-Dalam demo ini kita membuat sebuah aplikasi Flutter yang mengkonsumsi JSON dari
-REST API dan menampilkan responsenya ke dalam `ListView`.
-
-Folder `undiksha01api` berisikan aplikasi web yang dibuat dengan Laravel untuk
-kebutuhan REST API. Folder `undiksha01` dan `undiksha02` berisikan project
-Flutter yang mendemonstrasikan penggunaan BloC. Perbedaan antara `undiksha01`
-dan `undiksha02` terletak pada organisasi kode. Pada `undiksha02`, kode telah
-dipisahkan sesuai dengan kategorinya masing-masing yang diorganisasikan ke
-folder dan file.
+folder dan file. 
 
 Penerapan BloC pada demo ini menggunakan library
 [flutter_bloc](https://pub.dev/packages/flutter_bloc) untuk meminimalisir
